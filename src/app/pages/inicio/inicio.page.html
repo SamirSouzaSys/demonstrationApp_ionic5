@@ -1,0 +1,52 @@
+<!-- <app-header titulo="APP Ionic"> </app-header> -->
+<!-- no-border -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <!-- text="Voltar já" -->
+      <!-- <ion-back-button defaultHref="/" ></ion-back-button> -->
+
+      <!-- 
+        Menu Form
+      <ion-button (click)="toggleMenu()">
+        <ion-icon slot="icon-only" name="menu">
+        </ion-icon>
+      </ion-button> -->
+      
+      <ion-menu-button color="primary" menu="primeiro">
+        <!-- <ion-icon slot="icon-only" name="menu">
+          </ion-icon>     -->
+      </ion-menu-button> 
+      
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize" color="primary">Início</ion-title>
+    <!-- Angular Pipe -->
+    <!-- <ion-title>{{titulo | titlecase}}</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<!-- <p>
+    header works!
+  </p> -->
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>inicio</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let c of componentes | async" [routerLink]="c.link" detail>
+      <ion-icon [name]="c.icone" slot="start" color="primary"></ion-icon>
+      <ion-label>{{c.nome}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <!-- <p>
+    <ion-button color="danger" routerLink="/alert"> Alertas </ion-button>
+    <br>
+    <ion-button routerLink="/action-sheet"> Abas </ion-button>
+  </p> -->
+</ion-content>

@@ -1,0 +1,42 @@
+[
+  {
+    "icone":  "bulb-outline",
+    "nome":   "Alerta",
+    "link":   "/alert"
+  },
+  {
+    "icone":  "clipboard",
+    "nome":   "Abas",
+    "link":   "/action-sheet"
+  },
+  {
+    "icone":  "card",
+    "nome":   "Cards",
+    "link":   "/cards"
+  },
+  {
+    "icone":  "calendar",
+    "nome":   "Datas",
+    "link":   "/datas"
+  },
+  {
+    "icone":  "grid",
+    "nome":   "Grids",
+    "link":   "/grid"
+  },
+  {
+    "icone":  "information-circle-outline",
+    "nome":   "Inputs",
+    "link":   "/input"
+  },
+  {
+    "icone":  "albums-outline",
+    "nome":   "Slides",
+    "link":   "/slides"
+  },
+  {
+    "icone":  "notifications-outline",
+    "nome":   "Toasts",
+    "link":   "/toast"
+  }
+]

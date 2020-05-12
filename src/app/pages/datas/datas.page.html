@@ -1,0 +1,56 @@
+<app-header titulo="Datas"> </app-header>
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>datas</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Data Simples</ion-label>
+      <!-- value="{{dataAtual | date:'yyyy-MM-dd'}}" -->
+      <ion-datetime
+      placeholder="Datasss"
+      display-format="DD/MMMM/YYYY"
+      cancelText="Cancelar"
+      [ngModel]="dataAtual.toISOString()"
+      (ionChange)="trocarData($event)"
+      ></ion-datetime>
+      <!-- displayFormat="MMMM" value="2012-12-15T13:47:20.789" -->
+    </ion-item>
+  </ion-list>
+  <ion-list>
+    <ion-item>
+        <ion-label>Data Intevalo</ion-label>
+        <!-- value="{{dataAtual | date:'yyyy-MM-dd'}}" -->
+        <ion-datetime
+        placeholder="Datasss"
+        display-format="DD/MMMM/YYYY"
+        cancelText="Cancelar"
+        [ngModel]="dataAtual.toISOString()"
+        min="2015-01-01"
+        max="2019-12-31"
+        ></ion-datetime>
+        <!-- displayFormat="MMMM" value="2012-12-15T13:47:20.789" -->
+      </ion-item>
+  </ion-list>
+  <ion-list>
+      <ion-item>
+          <ion-label>Data Ano</ion-label>
+          <!-- value="{{dataAtual | date:'yyyy-MM-dd'}}" -->
+          <ion-datetime
+          placeholder="Datasss"
+          display-format="  YYYY"
+          cancelText="Cancelar"
+          [ngModel]="dataAtual.toISOString()"
+          min="2015"
+          max="2019"
+          ></ion-datetime>
+          <!-- displayFormat="MMMM" value="2012-12-15T13:47:20.789" -->
+        </ion-item>
+    </ion-list>
+
+</ion-content>

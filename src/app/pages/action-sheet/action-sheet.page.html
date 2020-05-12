@@ -1,0 +1,44 @@
+<app-header titulo='página de abas'></app-header>
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>action-sheet</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="speakers">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Inicio</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="inicio">
+        <ion-icon name="calendar"></ion-icon>
+        <ion-label>Action Sheet</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+
+      <ion-tab-button tab="map">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Map</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="alert">
+        <ion-icon name="information-circle"></ion-icon>
+        <ion-label>Alerta</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+  <ion-button color="success" expand="full" (click)="presentActionSheet()">
+    Call Modal ActionSheet
+  </ion-button>
+  
+
+</ion-content>

@@ -1,0 +1,29 @@
+<!-- <app-header titulo='página de alerta'> -->
+<app-header [titulo]="titulo || 'Página de Alerta'">
+</app-header>
+<!-- titulo =  Enviar informação para o Header -->
+
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-buttons  slot="start">
+      <ion-back-button defaultHref="/" text="Voltar já"></ion-back-button>
+    </ion-buttons>
+    <ion-title>alert</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content class="ion-padding">
+
+  <ion-button color="primary" expand="full" (click)="presentAlert()">
+    Mensagem!!
+  </ion-button>
+
+  <ion-button color="primary" expand="full" (click)="presentAlertPrompt()">
+    Alert Prompt!!
+  </ion-button>
+
+  <ion-button color="primary" expand="full" (click)="presentInput()">
+    Input!!
+  </ion-button>
+
+</ion-content>

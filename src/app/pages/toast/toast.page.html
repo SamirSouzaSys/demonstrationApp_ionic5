@@ -1,0 +1,14 @@
+<app-header [titulo]="titulo || 'Toasts'">
+</app-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button color="primary" expand="full" (click)="presentToast()">
+    Mensagem Toast!!
+  </ion-button>
+
+  <ion-button color="primary" expand="full" (click)="presentToastWithOptions()">
+    Mensagem Toast!!
+  </ion-button>
+
+</ion-content>
